@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Paysagiste Provence — Création & Entretien</title>
+  <meta name="description" content="Paysagiste à Vitrolles — création de jardins, aménagements, entretien des espaces verts. Demandez un devis gratuit." />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- Header / Hero -->
+  <header class="hero">
+    <nav class="nav">
+      <a href="#" class="logo">Paysagiste Provence</a>
+      <button class="nav-toggle" aria-label="Menu"><span></span><span></span><span></span></button>
+      <ul class="nav-links">
+        <li><a href="#accueil">Accueil</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#realisations">Réalisations</a></li>
+        <li><a href="#apropos">À propos</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+
+    <section id="accueil" class="hero-content">
+      <h1>Donnez vie à vos espaces verts</h1>
+      <p>Création de jardins, aménagements paysagers et entretien sur Vitrolles et alentours.</p>
+      <div class="hero-actions">
+        <a href="#contact" class="btn primary">Demander un devis</a>
+        <a href="#realisations" class="btn ghost">Voir nos réalisations</a>
+      </div>
+    </section>
+  </header>
+
+  <!-- Services -->
+  <section id="services" class="section">
+    <div class="container">
+      <h2>Nos services</h2>
+      <div class="cards">
+        <article class="card">
+          <h3>Création de jardins</h3>
+          <p>Conception sur mesure, choix des plantes adaptées au climat méditerranéen, massifs, pelouses et haies.</p>
+        </article>
+        <article class="card">
+          <h3>Aménagement paysager</h3>
+          <p>Terrasses, allées, éclairage, bassins et arrosage intégré pour des espaces harmonieux et durables.</p>
+        </article>
+        <article class="card">
+          <h3>Entretien</h3>
+          <p>Taille, désherbage, engrais, scarification et suivi saisonnier pour des jardins toujours impeccables.</p>
+        </article>
+        <article class="card">
+          <h3>Conseil & audit</h3>
+          <p>Étude de sol, diagnostic des plantations, plans d’amélioration et estimation budgétaire transparente.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Réalisations / Galerie -->
+  <section id="realisations" class="section alt">
+    <div class="container">
+      <h2>Réalisations</h2>
+
+      <div class="filters">
+        <button class="filter-btn active" data-filter="all">Tout</button>
+        <button class="filter-btn" data-filter="jardin">Jardin</button>
+        <button class="filter-btn" data-filter="terrasse">Terrasse</button>
+        <button class="filter-btn" data-filter="allee">Allée</button>
+      </div>
+
+      <div class="gallery">
+        <figure class="gallery-item" data-category="jardin">
+          <img src="assets/jardin-1.jpg" alt="Création de massif fleuri" loading="lazy" />
+          <figcaption>Massif fleuri — Printemps</figcaption>
+        </figure>
+        <figure class="gallery-item" data-category="terrasse">
+          <img src="assets/terrasse-1.jpg" alt="Terrasse bois exotique" loading="lazy" />
+          <figcaption>Terrasse bois exotique</figcaption>
+        </figure>
+        <figure class="gallery-item" data-category="allee">
+          <img src="assets/allee-1.jpg" alt="Allée en pas japonais" loading="lazy" />
+          <figcaption>Allée en pas japonais</figcaption>
+        </figure>
+        <figure class="gallery-item" data-category="jardin">
+          <img src="assets/jardin-2.jpg" alt="Pelouse et oliviers" loading="lazy" />
+          <figcaption>Pelouse & oliviers</figcaption>
+        </figure>
+        <figure class="gallery-item" data-category="terrasse">
+          <img src="assets/terrasse-2.jpg" alt="Terrasse carrelage gris" loading="lazy" />
+          <figcaption>Terrasse carrelage</figcaption>
+        </figure>
+        <figure class="gallery-item" data-category="allee">
+          <img src="assets/allee-2.jpg" alt="Allée gravillonnée" loading="lazy" />
+          <figcaption>Allée gravillonnée</figcaption>
+        </figure>
+      </div>
+
+      <div class="lightbox" aria-hidden="true">
+        <button class="lightbox-close" aria-label="Fermer">×</button>
+        <img class="lightbox-image" alt="" />
+        <p class="lightbox-caption"></p>
+      </div>
+    </div>
+  </section>
+
+  <!-- À propos -->
+  <section id="apropos" class="section">
+    <div class="container">
+      <h2>À propos</h2>
+      <div class="about">
+        <div>
+          <p>Basés à Vitrolles, nous accompagnons particuliers et professionnels pour créer des espaces verts
+             qui reflètent votre style de vie. Approche durable, matériaux qualitatifs, et suivi précis.</p>
+          <ul class="ticks">
+            <li>Devis gratuit et transparent</li>
+            <li>Intervention rapide sur P.A.C.A</li>
+            <li>Garantie satisfaction</li>
+          </ul>
+        </div>
+        <div class="about-card">
+          <h3>Coordonnées</h3>
+          <p><strong>Tel:</strong> 06 00 00 00 00</p>
+          <p><strong>Email:</strong> contact@paysagiste-provence.fr</p>
+          <p><strong>Zone:</strong> Vitrolles, Marseille, Aix-en-Provence</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="section alt">
+    <div class="container">
+      <h2>Contact</h2>
+      <form id="contactForm" novalidate>
+        <div class="form-grid">
+          <label>
+            Nom
+            <input type="text" name="name" required placeholder="Votre nom" />
+            <span class="error" data-error-for="name"></span>
+          </label>
+          <label>
+            Email
+            <input type="email" name="email" required placeholder="vous@exemple.com" />
+            <span class="error" data-error-for="email"></span>
+          </label>
+          <label class="full">
+            Message
+            <textarea name="message" rows="5" required placeholder="Parlez-nous de votre projet…"></textarea>
+            <span class="error" data-error-for="message"></span>
+          </label>
+        </div>
+
+        <div class="form-actions">
+          <button type="submit" class="btn primary">Envoyer</button>
+          <p class="form-status" role="status" aria-live="polite"></p>
+        </div>
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer-grid">
+      <div>
+        <strong>Paysagiste Provence</strong>
+        <p>Création & entretien d’espaces verts — PACA</p>
+      </div>
+      <div class="footer-links">
+        <a href="#services">Services</a>
+        <a href="#realisations">Réalisations</a>
+        <a href="#contact">Contact</a>
+      </div>
+      <div class="legal">
+        <p>© 2025 Paysagiste Provence. Tous droits réservés.</p>
+        <p>SIREN 000 000 000 — Mentions légales</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
